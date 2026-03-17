@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // object - collection(pair) of keys(properties) and its value
+        //
+    let student={name:"john",
+        age:23,
+        ismarried:false,
+        address:{streetNo:1,
+            area:"ghandhinagar",
+            pincode:209302,
+            town:"jhinjhak"
+        },
+        education:["10th","12th","B.Tech"],
+        degree:"B.Tech",
+        branch:"CSE",
+        year:2025,
+        getinfo:function(){
+            return "my current education is "+ student.degree;
+        }
+    }
+    console.log('name' in student);
+    //delete keys from object
+    console.log(delete student.name);
+    console.log(student);
+    //find length of objects
+    let keyslength=Object.keys(student);
+
+    //iterate keys of objects using for .. in loop
+    for(let x in studet[x]){
+        console.log(student[x]);
+    }
+    //create object using new keybword
+    let myInfo=new Object();
+    myInfo.age=23;
+    myInfo.address="GZB";
+    myInfo.mob=8445702758;
+    myInfo.ismarried=false;
+    console.log(myInfo.name);
+    console.log(myInfo['address'])
+
+    </script>
+</body>
+</html>

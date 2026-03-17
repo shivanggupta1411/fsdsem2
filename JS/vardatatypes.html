@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data values in js</title>
+</head>
+<body>
+    <script>
+        // js data value types
+        //primitive - immutable - single value data type in js
+        // string, number, booleAN, UNDEFINED, NULL, BIGINT AND Symbol
+
+        //string
+        var myname="shivang";
+        console.log(myname);
+        //number
+        var mymob=3343543433243;
+        console.log(myname + "mob number is " + mymob);
+        //boolean
+        var ismarried=false;
+        console.log(myname + "is married ?" + ismarried);
+        //undefined
+        var myemail;
+        console.log(myemail);
+        console.log(typeof(myemail));
+        //null
+        var myadd=null;
+        console.log(myadd);
+        console.log(typeof(myadd));
+        //bigint
+        var mynum=BigInt(36478364363768374632763784632763786376476346738657356376276735374636353467463565363763753736736563736);
+        console.log(mynum);
+        console.log(typeof(mynum));
+        //symbol
+        var var1=Symbol("vikas");
+        var var2=Symbol("vihin");
+        console.log(var1==var2)
+
+
+        // reference type(object)--mutable in memory and keep the data in key value pair
+
+        //object{}, function (), array[]
+        let myInfo={
+            name:"shivang",
+            age:23,
+            ismarried:false,
+            address:"kanpur",
+            branch:"cse",
+            section:23
+
+        };
+        console.log(myInfo);
+        console.log(myInfo.name);
+
+        // object length
+        var keys=Object.keys(myInfo);
+        console.log(keys.length);
+
+        //function - block of code to perform particular task
+
+        function cal(){
+            var n1=45;
+            var n2=40;
+            var add=n1+n2;
+            console.log("add="+add);
+        }
+
+        cal();
+
+
+        //array - collection of any data types
+        let stulist=["s1","s2","s3","s4"];
+        console.log(stulist[0]);
+        //for diff data types
+        let s1=["vikas",23,false,"gcb","cse",null,18];
+        console.log(s1);
+        console.log(s1.length);
+        //to  itterate array member
+        for (let i=0;i;s1.length;i++){
+            console.log(s1[i]);
+
+        }
+        for (let x in s1){
+            concole.log(s1[x])
+        }
+    </script>
+</body>
+</html>
